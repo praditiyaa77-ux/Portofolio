@@ -135,23 +135,4 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
   }
 
-  // Back to top
-  const toggleBackTop = () => backToTop?.classList.toggle("show", window.scrollY > 650);
-  window.addEventListener("scroll", toggleBackTop, { passive: true });
-  toggleBackTop();
-
-  backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-
-  // Smooth anchor navigation
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", (event) => {
-      const id = anchor.getAttribute("href");
-      if (!id || id === "#") return;
-      const target = document.querySelector(id);
-      if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
-
 });
