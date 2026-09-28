@@ -17,10 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentYear = document.getElementById("currentYear");
   const backToTop = document.getElementById("backToTop");
 
-  // Preloader
-  window.addEventListener("load", () => {
-    setTimeout(() => preloader?.classList.add("is-hidden"), 450);
-  });
+  // Preloader: do not wait for third-party assets or remote images.
+  // The portfolio content is usable as soon as the document is ready.
+  const hidePreloader = () => {
+    if (!preloader) return;
+    preloader.classList.add("is-hidden");
+    window.setTimeout(() => preloader.remove(), 800);
+  };
+  window.setTimeout(hidePreloader, 1200);
+  window.requestAnimationFrame(() => window.setTimeout(hidePreloader, 450));
 
   // Profile image
   if (PROFILE_IMAGE_URL && profileImage) {
@@ -129,24 +134,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: .25 });
     document.querySelectorAll("main section[id]").forEach((section) => sectionObserver.observe(section));
   }
-
-  // Back to top
-  const toggleBackTop = () => backToTop?.classList.toggle("show", window.scrollY > 650);
-  window.addEventListener("scroll", toggleBackTop, { passive: true });
-  toggleBackTop();
-
-  backToTop?.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
-
-  // Smooth anchor navigation
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener("click", (event) => {
-      const id = anchor.getAttribute("href");
-      if (!id || id === "#") return;
-      const target = document.querySelector(id);
-      if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-    });
-  });
 
 });
