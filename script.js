@@ -17,10 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const currentYear = document.getElementById("currentYear");
   const backToTop = document.getElementById("backToTop");
 
-  // Preloader
-  window.addEventListener("load", () => {
-    setTimeout(() => preloader?.classList.add("is-hidden"), 450);
-  });
+  // Preloader: do not wait for third-party assets or remote images.
+  // The portfolio content is usable as soon as the document is ready.
+  const hidePreloader = () => {
+    if (!preloader) return;
+    preloader.classList.add("is-hidden");
+    window.setTimeout(() => preloader.remove(), 800);
+  };
+  window.setTimeout(hidePreloader, 1200);
+  window.requestAnimationFrame(() => window.setTimeout(hidePreloader, 450));
 
   // Profile image
   if (PROFILE_IMAGE_URL && profileImage) {
