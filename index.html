@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="description" content="Portfolio Alfan Praditiya Agustianto — F&B Professional & Visual Communication Design Graduate." />
+  <title>Alfan Praditiya Agustianto — Portfolio</title>
+
+  <!-- Tailwind CSS CDN: no build step required -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Icons + scroll animation via CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="preloader" aria-label="Loading">
+    <div class="loader-orb"></div>
+    <span class="loader-text">Loading portfolio<span class="dots">...</span></span>
+  </div>
+
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <div class="ambient ambient-three"></div>
+
+  <header class="site-header">
+    <nav class="nav-shell glass-panel" aria-label="Navigasi utama">
+      <a href="#home" class="brand" aria-label="Alfan Portfolio">AP</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </div>
+      <a href="#contact" class="nav-contact magnetic">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero-section section-pad">
+      <div class="bento-hero">
+        <article class="bento-card hero-main glass-panel interactive-card" data-aos="fade-up">
+          <div class="eyebrow"><span class="status-dot"></span> Available for opportunities</div>
+          <p class="hero-kicker">F&amp;B Professional · Visual Communication Design</p>
+          <h1>Alfan Praditiya <span>Agustianto</span></h1>
+          <p class="hero-tagline">F&amp;B Professional &amp; Visual Communication Design Graduate</p>
+          <p class="hero-bio">Saya seorang lulusan Desain Komunikasi Visual bersertifikat PKL resmi dari Kaos Kuningan Indonesia yang kini aktif berkarier sebagai FnB Crew. Saya memadukan ketelitian operasional teknis dengan keahlian kuat dalam pelayanan pelanggan serta efisiensi kerja yang teruji di bawah tekanan jam sibuk.</p>
+          <div class="hero-actions">
+            <a href="#experience" class="btn btn-primary magnetic ripple-target">View Experience <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#contact" class="btn btn-secondary magnetic ripple-target">Get in Touch <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </article>
+        <article class="bento-card profile-bento glass-panel interactive-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="profile-glow"></div>
+          <div class="profile-frame">
+            <img id="profileImage" src="" alt="Foto profil Alfan Praditiya Agustianto" />
+            <div class="image-fallback" id="imageFallback"><span>AP</span><small>Profile Photo</small></div>
+          </div>
+          <div class="profile-badge"><i class="fa-solid fa-star"></i><span>Creative &amp; Reliable</span></div>
+        </article>
+        <article class="bento-card mini-bento glass-panel interactive-card" data-aos="fade-up" data-aos-delay="160">
+          <div class="mini-icon"><i class="fa-solid fa-bolt"></i></div><span class="mini-label">01 / WORK MODE</span>
+          <h3>Peak-hour<br><span>ready.</span></h3><p>Calm, quick, consistent.</p>
+        </article>
+        <article class="bento-card mini-bento glass-panel interactive-card" data-aos="fade-up" data-aos-delay="220">
+          <div class="mini-icon blue"><i class="fa-solid fa-palette"></i></div><span class="mini-label">02 / MINDSET</span>
+          <h3>Visual<br><span>minded.</span></h3><p>Detail meets creativity.</p>
+        </article>
+        <article class="bento-card stats-bento glass-panel interactive-card" data-aos="fade-up" data-aos-delay="280">
+          <div><span class="stat-value">02</span><span class="stat-caption">professional<br>experiences</span></div>
+          <div><span class="stat-value">04</span><span class="stat-caption">core<br>skills</span></div>
+          <div><span class="stat-value">DKV</span><span class="stat-caption">visual design<br>background</span></div>
+        </article>
+      </div>
+      <div class="scroll-indicator"><span>Scroll to explore</span><i class="fa-solid fa-arrow-down"></i></div>
+    </section>
+
+    <section id="about" class="section-pad compact-section">
+      <div class="section-heading" data-aos="fade-up"><span class="section-number">01</span><div><p class="section-label">Profile</p><h2>Precision meets <span>people skills.</span></h2></div></div>
+      <div class="bento-about">
+        <article class="about-card glass-panel interactive-card" data-aos="fade-up"><div class="quote-mark">“</div><p>Pengalaman di dunia F&amp;B dan produksi percetakan digital membentuk cara kerja yang detail, disiplin, komunikatif, dan tetap tenang ketika ritme kerja meningkat.</p></article>
+        <div class="about-tags-bento" data-aos="fade-left">
+          <span class="glass-panel">Customer-focused</span><span class="glass-panel">Detail-oriented</span><span class="glass-panel">Fast-paced</span><span class="glass-panel">Team player</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad">
+      <div class="section-heading" data-aos="fade-up"><span class="section-number">02</span><div><p class="section-label">Core Skills</p><h2>What I bring <span>to the team.</span></h2></div></div>
+      <div class="skills-bento">
+        <article class="skill-card glass-panel interactive-card" data-aos="fade-up"><div class="skill-icon"><i class="fa-solid fa-handshake"></i></div><span class="skill-index">01</span><h3>Customer Service &amp; Hospitality</h3><p>Ramah dan solutif dalam berinteraksi dengan pelanggan untuk menciptakan pengalaman yang positif.</p></article>
+        <article class="skill-card glass-panel interactive-card" data-aos="fade-up" data-aos-delay="70"><div class="skill-icon"><i class="fa-solid fa-arrow-trend-up"></i></div><span class="skill-index">02</span><h3>Upselling Skills</h3><p>Kemampuan menawarkan menu tambahan secara natural dengan membaca kebutuhan pelanggan.</p></article>
+        <article class="skill-card glass-panel interactive-card" data-aos="fade-up" data-aos-delay="140"><div class="skill-icon"><i class="fa-solid fa-stopwatch"></i></div><span class="skill-index">03</span><h3>Time Management &amp; Multitasking</h3><p>Menjaga efisiensi kerja dan prioritas ketika menghadapi ritme cepat saat peak hours.</p></article>
+        <article class="skill-card glass-panel interactive-card" data-aos="fade-up" data-aos-delay="210"><div class="skill-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div><span class="skill-index">04</span><h3>Hygiene &amp; Sanitation Standards</h3><p>Konsisten menjaga kebersihan dan standar area kerja agar tetap aman dan nyaman.</p></article>
+      </div>
+    </section>
+
+    <section id="experience" class="section-pad">
+      <div class="section-heading" data-aos="fade-up"><span class="section-number">03</span><div><p class="section-label">Experience</p><h2>Experience built <span>under pressure.</span></h2></div></div>
+      <div class="experience-bento">
+        <article class="timeline-card glass-panel interactive-card featured-experience" data-aos="fade-right"><div class="experience-number">01</div><p class="role-type">Work Experience</p><h3>FnB Crew</h3><p class="company">McDonald's</p><p class="experience-description">Menangani pelayanan pelanggan, memastikan area makan bersih sesuai standar sanitasi, dan bekerja sama dengan tim dapur untuk mempercepat penyajian pesanan. Berhasil menjaga efisiensi kerja secara konsisten saat jam sibuk (peak hours).</p><div class="experience-tags"><span>Hospitality</span><span>Operations</span><span>Teamwork</span></div><span class="experience-corner"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></article>
+        <article class="timeline-card glass-panel interactive-card" data-aos="fade-left"><div class="experience-number">02</div><p class="role-type">Official Apprenticeship</p><h3>Operator Produksi Percetakan Digital</h3><p class="company">Kaos Kuningan Indonesia</p><p class="experience-description">Mengoperasikan mesin cetak dan melakukan kontrol kualitas (quality control) produk. Pengalaman ini membentuk kedisiplinan kerja dan ketelitian tingkat tinggi pada detail visual dan teknis.</p><div class="experience-tags"><span>Production</span><span>Quality Control</span><span>Visual Detail</span></div><span class="experience-corner"><i class="fa-solid fa-arrow-up-right-from-square"></i></span></article>
+      </div>
+    </section>
+
+    <section id="education" class="section-pad education-section">
+      <div class="section-heading" data-aos="fade-up"><span class="section-number">04</span><div><p class="section-label">Education</p><h2>Foundation in <span>visual design.</span></h2></div></div>
+      <div class="final-bento">
+        <article class="education-card glass-panel interactive-card" data-aos="fade-up"><div class="education-icon"><i class="fa-solid fa-graduation-cap"></i></div><div><p class="role-type">2024 — 2026</p><h3>SMK Negeri 6 Kuningan</h3><p>Jurusan: Desain Komunikasi Visual</p></div></article>
+        <article id="contact" class="contact-card glass-panel interactive-card" data-aos="fade-up" data-aos-delay="100"><div><p class="section-label">Let's connect</p><h2>Ready to make <span>an impact.</span></h2><p>Hubungi saya melalui platform pilihan Anda.</p></div><div class="contact-icons" aria-label="Kontak"><a class="contact-icon magnetic ripple-target" href="https://wa.me/6283137741581" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a><a class="contact-icon magnetic ripple-target" href="https://t.me/emypyy" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a><a class="contact-icon magnetic ripple-target" href="mailto:alfanpraditiyaa@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="currentYear"></span> Alfan Praditiya Agustianto</span>
+    <span>Designed with precision.</span>
+  </footer>
+
+  <button id="backToTop" class="back-top magnetic" aria-label="Kembali ke atas">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
